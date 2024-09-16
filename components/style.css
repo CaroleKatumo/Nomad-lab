@@ -685,4 +685,5 @@ input, select {
 .back-button {
   font-size: 20px;
   margin-bottom: 30px;
+  cursor: pointer;
 }
