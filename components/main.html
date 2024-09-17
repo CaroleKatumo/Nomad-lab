@@ -11,38 +11,89 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-  />
-  <script src="script.js"></script>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
+    <script src="script.js"></script>
     <header>
       <div class="logo">
         <img src="logo.png" alt="Nomad Lab Logo" />
       </div>
       <nav>
         <ul class="nav-icons">
-          <li><a href="#"><i class="fas fa-mountain"></i><span>Activity</span></a></li>
-          <li><a href="#"><i class="fas fa-briefcase"></i><span>Works</span></a></li>
-          <li><a href="#" class="active"><i class="fas fa-bed"></i><span>Stay</span></a></li>
-          <li><a href="#"><i class="fas fa-utensils"></i><span>Eat</span></a></li>
-          <li><a href="#"><i class="fas fa-users"></i><span>Community</span></a></li>
+          <li>
+            <a href="#"><i class="fas fa-mountain"></i><span>Activity</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-briefcase"></i><span>Works</span></a>
+          </li>
+          <li>
+            <a href="#" class="active"
+              ><i class="fas fa-bed"></i><span>Stay</span></a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-utensils"></i><span>Eat</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-users"></i><span>Community</span></a>
+          </li>
         </ul>
       </nav>
       <div class="search-profile">
         <input type="text" placeholder="Search" />
         <div class="profile-icon">T</div>
       </div>
+
+      <div class="hamburger-menu">
+        <i class="fas fa-bars"></i>
+      </div>
     </header>
+
+    <div class="drawer-overlay"></div>
+    <div class="drawer">
+      <button class="drawer-close"><i class="fas fa-arrow-left"></i></button>
+      <ul>
+        <li>
+          <a href="#"><i class="fas fa-mountain"></i><span>Activity</span></a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-briefcase"></i><span>Works</span></a>
+        </li>
+        <li>
+          <a href="#" class="active"
+            ><i class="fas fa-bed"></i><span>Stay</span></a
+          >
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-utensils"></i><span>Eat</span></a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-users"></i><span>Community</span></a>
+        </li>
+      </ul>
+    </div>
 
     <section class="stay-section">
       <div class="stay-description">
-        <h1 class="stay-header">STAY</h1>
-        <p class="sub-title">特別な体験ができるエリアの近くで</p>
-          <p class="sub-title">有意義な時間を過ごせる宿泊先を見つけよう。</p>
+        <div class="wrapper">
+          <div class="box div2">
+            <h1 class="stay-header">STAY</h1>
+            <p class="sub-title">特別な体験ができるエリアの近くで</p>
+            <p class="sub-title">有意義な時間を過ごせる宿泊先を見つけよう。</p>
+          </div>
+          <div class="box div3">
+            <a href="#" class="view-all-button">View All ></a>
+          </div>
+        </div>
       </div>
-      
+
       <div class="stay-container">
         <div class="stay-grid">
           <div class="stay-item">
@@ -90,7 +141,7 @@
 
               <!-- <a href="#" class="view-details">View Details</a> -->
             </div>
-            <h2 class="head">| SOUQ越後湯沢</h2>
+            <h2 class="head">| 和島トゥー・ル・モンドキャンプ場</h2>
           </div>
 
           <div class="stay-item">
@@ -106,7 +157,9 @@
 
               <!-- <a href="#" class="view-details">View Details</a> -->
             </div>
-            <h2 class="head">| SOUQ越後湯沢</h2>
+            <h2 class="head">
+              | この文章はダミーです。文字の大きさ、 量、字間、行
+            </h2>
           </div>
           <div class="stay-item">
             <img src="./assets/PXL_20230829_043447263.jpg" alt="Stay 1" />
@@ -121,7 +174,7 @@
 
               <!-- <a href="#" class="view-details">View Details</a> -->
             </div>
-            <h2 class="head">| SOUQ越後湯沢</h2>
+            <h2 class="head">| この文章はダミーです。文字の</h2>
           </div>
           <div class="stay-item">
             <img src="./assets/PXL_20230827_102740166.jpg" alt="Stay 1" />
@@ -136,7 +189,10 @@
 
               <!-- <a href="#" class="view-details">View Details</a> -->
             </div>
-            <h2 class="head">| SOUQ越後湯沢</h2>
+            <h2 class="head">
+              | この文章はダミーです。文字の<br />
+              この文章はダミーです。文字の大きさ
+            </h2>
           </div>
           <div class="stay-item">
             <img src="./assets/1689377256407.jpg" alt="Stay 1" />
@@ -151,7 +207,7 @@
 
               <!-- <a href="#" class="view-details">View Details</a> -->
             </div>
-            <h2 class="head">| SOUQ越後湯沢</h2>
+            <h2 class="head">| FREE ART FIELD出雲崎</h2>
           </div>
           <div class="stay-item">
             <img src="./assets/1689377257154.jpg" alt="Stay 1" />
@@ -166,38 +222,37 @@
 
               <!-- <a href="#" class="view-details">View Details</a> -->
             </div>
-            <h2 class="head">| SOUQ越後湯沢</h2>
+            <h2 class="head">| FREE ART FIELD出雲崎</h2>
           </div>
 
           <!-- More items can be added here -->
         </div>
-        <div class="tags-container">
-          <div class="tags-label">
-            <span>TAGS</span>
-          </div>
-          <div class="tags-list">
-            <a href="#">#長期滞在</a>
-            <a href="#">#一棟貸し</a>
-            <a href="#">#長期滞在</a>
-            <a href="#">#一棟貸し</a>
-            <a href="#">#コミュニティのあるゲストハウス</a>
-          </div>
-        </div>
-        
       </div>
     </section>
-    
+    <div class="tags-container">
+      <div class="tags-label">
+        <span>TAGS</span>
+      </div>
+      <div class="tags-list">
+        <a href="#">#長期滞在</a>
+        <a href="#">#一棟貸し</a>
+        <a href="#">#長期滞在</a>
+        <a href="#">#一棟貸し</a>
+        <a href="#">#コミュニティのあるゲストハウス</a>
+      </div>
+    </div>
+
     <section class="stay-section">
       <div class="stay-description">
         <h1 class="stay-header">WORKS</h1>
         <p class="sub-title">特別な体験ができるエリアの近くで</p>
-          <p class="sub-title">有意義な時間を過ごせる宿泊先を見つけよう。</p>
+        <p class="sub-title">有意義な時間を過ごせる宿泊先を見つけよう。</p>
       </div>
-      
+
       <div class="stay-container">
         <div class="stay-grid">
           <div class="stay-item">
-            <img src="./assets/IMG_1003.jpg" alt="Stay 1" onclick="redirectToPage()" />
+            <img src="./assets/IMG_1003.jpg" alt="Stay 1" />
             <div class="bookmark-icon-container">
               <i class="material-icons bookmark-icon" style="font-size: 24px"
                 >bookmark</i
@@ -205,7 +260,7 @@
             </div>
             <div class="details">
               <p class="view">新潟県出雲崎町</p>
-              <p class="view" onclick="redirectToPage()">View Details</p>
+              <p class="view">View Details</p>
 
               <!-- <a href="#" class="view-details">View Details</a> -->
             </div>
@@ -241,7 +296,7 @@
 
               <!-- <a href="#" class="view-details">View Details</a> -->
             </div>
-            <h2 class="head">| SOUQ越後湯沢</h2>
+            <h2 class="head">| 和島トゥー・ル・モンドキャンプ場</h2>
           </div>
 
           <div class="stay-item">
@@ -257,7 +312,9 @@
 
               <!-- <a href="#" class="view-details">View Details</a> -->
             </div>
-            <h2 class="head">| SOUQ越後湯沢</h2>
+            <h2 class="head">
+              | この文章はダミーです。文字の大きさ、 量、字間、行
+            </h2>
           </div>
           <div class="stay-item">
             <img src="./assets/PXL_20230829_043447263.jpg" alt="Stay 1" />
@@ -272,7 +329,7 @@
 
               <!-- <a href="#" class="view-details">View Details</a> -->
             </div>
-            <h2 class="head">| SOUQ越後湯沢</h2>
+            <h2 class="head">| この文章はダミーです。文字の</h2>
           </div>
           <div class="stay-item">
             <img src="./assets/PXL_20230827_102740166.jpg" alt="Stay 1" />
@@ -287,7 +344,10 @@
 
               <!-- <a href="#" class="view-details">View Details</a> -->
             </div>
-            <h2 class="head">| SOUQ越後湯沢</h2>
+            <h2 class="head">
+              | この文章はダミーです。文字の<br />
+              この文章はダミーです。文字の大きさ
+            </h2>
           </div>
           <div class="stay-item">
             <img src="./assets/1689377256407.jpg" alt="Stay 1" />
@@ -302,7 +362,7 @@
 
               <!-- <a href="#" class="view-details">View Details</a> -->
             </div>
-            <h2 class="head">| SOUQ越後湯沢</h2>
+            <h2 class="head">| FREE ART FIELD出雲崎</h2>
           </div>
           <div class="stay-item">
             <img src="./assets/1689377257154.jpg" alt="Stay 1" />
@@ -317,34 +377,34 @@
 
               <!-- <a href="#" class="view-details">View Details</a> -->
             </div>
-            <h2 class="head">| SOUQ越後湯沢</h2>
+            <h2 class="head">| FREE ART FIELD出雲崎</h2>
           </div>
 
           <!-- More items can be added here -->
         </div>
-        <div class="tags-container">
-          <div class="tags-label">
-            <span>TAGS</span>
-          </div>
-          <div class="tags-list">
-            <a href="#">#長期滞在</a>
-            <a href="#">#一棟貸し</a>
-            <a href="#">#長期滞在</a>
-            <a href="#">#一棟貸し</a>
-            <a href="#">#コミュニティのあるゲストハウス</a>
-          </div>
-        </div>
-        
       </div>
     </section>
-    
+
+    <div class="tags-container">
+      <div class="tags-label">
+        <span class="tag-text">TAGS</span>
+      </div>
+      <div class="tags-list">
+        <a href="#">#長期滞在</a>
+        <a href="#">#一棟貸し</a>
+        <a href="#">#長期滞在</a>
+        <a href="#">#一棟貸し</a>
+        <a href="#">#コミュニティのあるゲストハウス</a>
+      </div>
+    </div>
+
     <section class="stay-section">
       <div class="stay-description">
         <h1 class="stay-header">EAT</h1>
         <p class="sub-title">特別な体験ができるエリアの近くで</p>
-          <p class="sub-title">有意義な時間を過ごせる宿泊先を見つけよう。</p>
+        <p class="sub-title">有意義な時間を過ごせる宿泊先を見つけよう。</p>
       </div>
-      
+
       <div class="stay-container">
         <div class="stay-grid">
           <div class="stay-item">
@@ -392,7 +452,7 @@
 
               <!-- <a href="#" class="view-details">View Details</a> -->
             </div>
-            <h2 class="head">| SOUQ越後湯沢</h2>
+            <h2 class="head">| 和島トゥー・ル・モンドキャンプ場</h2>
           </div>
 
           <div class="stay-item">
@@ -408,7 +468,9 @@
 
               <!-- <a href="#" class="view-details">View Details</a> -->
             </div>
-            <h2 class="head">| SOUQ越後湯沢</h2>
+            <h2 class="head">
+              | この文章はダミーです。文字の大きさ、 量、字間、行
+            </h2>
           </div>
           <div class="stay-item">
             <img src="./assets/PXL_20230829_043447263.jpg" alt="Stay 1" />
@@ -423,7 +485,7 @@
 
               <!-- <a href="#" class="view-details">View Details</a> -->
             </div>
-            <h2 class="head">| SOUQ越後湯沢</h2>
+            <h2 class="head">| この文章はダミーです。文字の</h2>
           </div>
           <div class="stay-item">
             <img src="./assets/PXL_20230827_102740166.jpg" alt="Stay 1" />
@@ -438,7 +500,10 @@
 
               <!-- <a href="#" class="view-details">View Details</a> -->
             </div>
-            <h2 class="head">| SOUQ越後湯沢</h2>
+            <h2 class="head">
+              | この文章はダミーです。文字の<br />
+              この文章はダミーです。文字の大きさ
+            </h2>
           </div>
           <div class="stay-item">
             <img src="./assets/1689377256407.jpg" alt="Stay 1" />
@@ -453,7 +518,7 @@
 
               <!-- <a href="#" class="view-details">View Details</a> -->
             </div>
-            <h2 class="head">| SOUQ越後湯沢</h2>
+            <h2 class="head">| FREE ART FIELD出雲崎</h2>
           </div>
           <div class="stay-item">
             <img src="./assets/1689377257154.jpg" alt="Stay 1" />
@@ -468,34 +533,34 @@
 
               <!-- <a href="#" class="view-details">View Details</a> -->
             </div>
-            <h2 class="head">| SOUQ越後湯沢</h2>
+            <h2 class="head">| FREE ART FIELD出雲崎</h2>
           </div>
 
           <!-- More items can be added here -->
         </div>
-        <div class="tags-container">
-          <div class="tags-label">
-            <span>TAGS</span>
-          </div>
-          <div class="tags-list">
-            <a href="#">#長期滞在</a>
-            <a href="#">#一棟貸し</a>
-            <a href="#">#長期滞在</a>
-            <a href="#">#一棟貸し</a>
-            <a href="#">#コミュニティのあるゲストハウス</a>
-          </div>
-        </div>
-        
       </div>
     </section>
-    
+
+    <div class="tags-container">
+      <div class="tags-label">
+        <span>TAGS</span>
+      </div>
+      <div class="tags-list">
+        <a href="#">#長期滞在</a>
+        <a href="#">#一棟貸し</a>
+        <a href="#">#長期滞在</a>
+        <a href="#">#一棟貸し</a>
+        <a href="#">#コミュニティのあるゲストハウス</a>
+      </div>
+    </div>
+
     <section class="stay-section">
       <div class="stay-description">
         <h1 class="stay-header">ACTIVITY</h1>
         <p class="sub-title">特別な体験ができるエリアの近くで</p>
-          <p class="sub-title">有意義な時間を過ごせる宿泊先を見つけよう。</p>
+        <p class="sub-title">有意義な時間を過ごせる宿泊先を見つけよう。</p>
       </div>
-      
+
       <div class="stay-container">
         <div class="stay-grid">
           <div class="stay-item">
@@ -543,7 +608,7 @@
 
               <!-- <a href="#" class="view-details">View Details</a> -->
             </div>
-            <h2 class="head">| SOUQ越後湯沢</h2>
+            <h2 class="head">| 和島トゥー・ル・モンドキャンプ場</h2>
           </div>
 
           <div class="stay-item">
@@ -559,7 +624,9 @@
 
               <!-- <a href="#" class="view-details">View Details</a> -->
             </div>
-            <h2 class="head">| SOUQ越後湯沢</h2>
+            <h2 class="head">
+              | この文章はダミーです。文字の大きさ、 量、字間、行
+            </h2>
           </div>
           <div class="stay-item">
             <img src="./assets/PXL_20230829_043447263.jpg" alt="Stay 1" />
@@ -574,7 +641,7 @@
 
               <!-- <a href="#" class="view-details">View Details</a> -->
             </div>
-            <h2 class="head">| SOUQ越後湯沢</h2>
+            <h2 class="head">| この文章はダミーです。文字の</h2>
           </div>
           <div class="stay-item">
             <img src="./assets/PXL_20230827_102740166.jpg" alt="Stay 1" />
@@ -589,7 +656,10 @@
 
               <!-- <a href="#" class="view-details">View Details</a> -->
             </div>
-            <h2 class="head">| SOUQ越後湯沢</h2>
+            <h2 class="head">
+              | この文章はダミーです。文字の<br />
+              この文章はダミーです。文字の大きさ
+            </h2>
           </div>
           <div class="stay-item">
             <img src="./assets/1689377256407.jpg" alt="Stay 1" />
@@ -604,7 +674,7 @@
 
               <!-- <a href="#" class="view-details">View Details</a> -->
             </div>
-            <h2 class="head">| SOUQ越後湯沢</h2>
+            <h2 class="head">| FREE ART FIELD出雲崎</h2>
           </div>
           <div class="stay-item">
             <img src="./assets/1689377257154.jpg" alt="Stay 1" />
@@ -619,33 +689,32 @@
 
               <!-- <a href="#" class="view-details">View Details</a> -->
             </div>
-            <h2 class="head">| SOUQ越後湯沢</h2>
+            <h2 class="head">| FREE ART FIELD出雲崎</h2>
           </div>
 
           <!-- More items can be added here -->
         </div>
-        <div class="tags-container">
-          <div class="tags-label">
-            <span>TAGS</span>
-          </div>
-          <div class="tags-list">
-            <a href="#">#長期滞在</a>
-            <a href="#">#一棟貸し</a>
-            <a href="#">#長期滞在</a>
-            <a href="#">#一棟貸し</a>
-            <a href="#">#コミュニティのあるゲストハウス</a>
-          </div>
-        </div>
-        
       </div>
     </section>
+    <div class="tags-container">
+      <div class="tags-label">
+        <span>TAGS</span>
+      </div>
+      <div class="tags-list">
+        <a href="#">#長期滞在</a>
+        <a href="#">#一棟貸し</a>
+        <a href="#">#長期滞在</a>
+        <a href="#">#一棟貸し</a>
+        <a href="#">#コミュニティのあるゲストハウス</a>
+      </div>
+    </div>
     <section class="stay-section">
       <div class="stay-description">
         <h1 class="stay-header">COMMUNITY</h1>
         <p class="sub-title">特別な体験ができるエリアの近くで</p>
-          <p class="sub-title">有意義な時間を過ごせる宿泊先を見つけよう。</p>
+        <p class="sub-title">有意義な時間を過ごせる宿泊先を見つけよう。</p>
       </div>
-      
+
       <div class="stay-container">
         <div class="stay-grid">
           <div class="stay-item">
@@ -693,7 +762,7 @@
 
               <!-- <a href="#" class="view-details">View Details</a> -->
             </div>
-            <h2 class="head">| SOUQ越後湯沢</h2>
+            <h2 class="head">| 和島トゥー・ル・モンドキャンプ場</h2>
           </div>
 
           <div class="stay-item">
@@ -709,7 +778,9 @@
 
               <!-- <a href="#" class="view-details">View Details</a> -->
             </div>
-            <h2 class="head">| SOUQ越後湯沢</h2>
+            <h2 class="head">
+              | この文章はダミーです。文字の大きさ、 量、字間、行
+            </h2>
           </div>
           <div class="stay-item">
             <img src="./assets/PXL_20230829_043447263.jpg" alt="Stay 1" />
@@ -724,7 +795,7 @@
 
               <!-- <a href="#" class="view-details">View Details</a> -->
             </div>
-            <h2 class="head">| SOUQ越後湯沢</h2>
+            <h2 class="head">| この文章はダミーです。文字の</h2>
           </div>
           <div class="stay-item">
             <img src="./assets/PXL_20230827_102740166.jpg" alt="Stay 1" />
@@ -739,7 +810,10 @@
 
               <!-- <a href="#" class="view-details">View Details</a> -->
             </div>
-            <h2 class="head">| SOUQ越後湯沢</h2>
+            <h2 class="head">
+              | この文章はダミーです。文字の<br />
+              この文章はダミーです。文字の大きさ
+            </h2>
           </div>
           <div class="stay-item">
             <img src="./assets/1689377256407.jpg" alt="Stay 1" />
@@ -754,7 +828,7 @@
 
               <!-- <a href="#" class="view-details">View Details</a> -->
             </div>
-            <h2 class="head">| SOUQ越後湯沢</h2>
+            <h2 class="head">| FREE ART FIELD出雲崎</h2>
           </div>
           <div class="stay-item">
             <img src="./assets/1689377257154.jpg" alt="Stay 1" />
@@ -769,45 +843,55 @@
 
               <!-- <a href="#" class="view-details">View Details</a> -->
             </div>
-            <h2 class="head">| SOUQ越後湯沢</h2>
+            <h2 class="head">| FREE ART FIELD出雲崎</h2>
           </div>
 
           <!-- More items can be added here -->
         </div>
-        <div class="tags-container">
-          <div class="tags-label">
-            <span>TAGS</span>
-          </div>
-          <div class="tags-list">
-            <a href="#">#長期滞在</a>
-            <a href="#">#一棟貸し</a>
-            <a href="#">#長期滞在</a>
-            <a href="#">#一棟貸し</a>
-            <a href="#">#コミュニティのあるゲストハウス</a>
-          </div>
-        </div>
-        
       </div>
     </section>
-
+    <div class="tags-container">
+      <div class="tags-label">
+        <span>TAGS</span>
+      </div>
+      <div class="tags-list">
+        <a href="#">#長期滞在</a>
+        <a href="#">#一棟貸し</a>
+        <a href="#">#長期滞在</a>
+        <a href="#">#一棟貸し</a>
+        <a href="#">#コミュニティのあるゲストハウス</a>
+      </div>
+    </div>
 
     <footer class="footer">
-      <img src="nomad-lab-logo.png" alt="Nomad Lab" class="logo">
+      <img src="nomad-lab-logo.png" alt="Nomad Lab" class="logo" />
       <div class="footer-text">
-          COMMUNITY<br>
-          PROJECT<br>
-          EVENT
+        COMMUNITY<br />
+        PROJECT<br />
+        EVENT
       </div>
-      <div class="footer-text">
-          地図から探す
-      </div>
-      <img src="globe-icon.svg" alt="Globe Icon" class="globe-icon">
-      <div class="footer-text">
-          SUUU
-      </div>
-      <div class="copyright">
-          Copyright © Qetic inc. All Rights Reserved.
-      </div>
-  </footer>
+      <div class="footer-text">地図から探す</div>
+      <img src="globe-icon.svg" alt="Globe Icon" class="globe-icon" />
+      <div class="footer-text">SUUU</div>
+      <div class="copyright">Copyright © Qetic inc. All Rights Reserved.</div>
+    </footer>
+
+    <script>
+      const hamburgerMenu = document.querySelector(".hamburger-menu");
+      const drawer = document.querySelector(".drawer");
+      const drawerOverlay = document.querySelector(".drawer-overlay");
+      const drawerClose = document.querySelector(".drawer-close");
+
+      function toggleDrawer() {
+        drawer.classList.toggle("open");
+        drawerOverlay.style.display = drawer.classList.contains("open")
+          ? "block"
+          : "none";
+      }
+
+      hamburgerMenu.addEventListener("click", toggleDrawer);
+      drawerOverlay.addEventListener("click", toggleDrawer);
+      drawerClose.addEventListener("click", toggleDrawer);
+    </script>
   </body>
 </html>
