@@ -185,9 +185,9 @@ nav ul li a.active {
 
   }
 
-  .drawer-overlay {
-      display: block;
-  }
+  /* .drawer-overlay { */
+      
+  /* } */
 }
 
 
@@ -347,6 +347,17 @@ nav ul li a.active {
   height: 100px;
   margin-top: 20px;
 }
+.tags-container2 {
+  display: flex;
+  align-items: center;
+  background-color: #ff4b00; /* Orange background */
+  /* padding: 10px 20px; */
+  height: 100px;
+  margin-top: 20px;
+  width: 1740px;
+  margin-left: -20px;
+}
+
 
 /* Left label (TAGS) styling */
 .tags-label {
@@ -571,9 +582,12 @@ font-size: 14px !important;
   .tags-container {
     padding: 5px 10px;
   }
+  .tags-container2 {
+    padding: 5px 10px;
+  }
 
   .tags-label {
-    font-size: 1.2em;
+    font-size: 1em;
     width: 80px;
     margin-right: 10px;
   }
@@ -588,6 +602,13 @@ font-size: 14px !important;
   .tags-container {
     flex-direction: column;
     align-items: flex-start;
+    width: 110%;
+  }
+
+  .tags-container2 {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 140%;
   }
 
   .tags-label {
@@ -602,7 +623,7 @@ font-size: 14px !important;
   }
 
   .tags-list a {
-    font-size: 0.8em;
+    font-size: 0.5em;
     padding: 2px 8px;
   }
 }
@@ -642,13 +663,15 @@ font-size: 14px !important;
 }
 
 main {
-  max-width: 1400px;
+  /* max-width: 1400px; */
   margin: 0 auto;
   padding: 20px;
   /* background-color: white; */
   /* border-radius: 10px; */
   /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
 }
+
+
 
 .property-details h1 {
   margin: 0;
@@ -686,6 +709,9 @@ main {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 10px;
+  max-width: 1400px; 
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .main-image img {
@@ -760,6 +786,11 @@ main {
       grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
+.property-details  {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1400px; 
+}
 
 
 .container-section {
@@ -768,6 +799,10 @@ main {
   justify-content: space-between;
   flex-wrap: wrap; /* Allows wrapping of the form and main content */
   gap: 20px; /* Adds space between sections */
+
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1400px; 
 }
 
 .main-content {
@@ -889,7 +924,7 @@ input, select {
 
 .back-button {
   font-size: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 60px !important;
   cursor: pointer;
 }
 

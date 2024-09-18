@@ -48,24 +48,35 @@
 
       <div class="hamburger-menu">
         <i class="fas fa-bars"></i>
-    </div>
+      </div>
     </header>
-    
 
     <div class="drawer-overlay"></div>
     <div class="drawer">
-        <button class="drawer-close"><i class="fas fa-arrow-left"></i></button>
-        <ul>
-            <li><a href="#"><i class="fas fa-mountain"></i><span>Activity</span></a></li>
-            <li><a href="#"><i class="fas fa-briefcase"></i><span>Works</span></a></li>
-            <li><a href="#" class="active"><i class="fas fa-bed"></i><span>Stay</span></a></li>
-            <li><a href="#"><i class="fas fa-utensils"></i><span>Eat</span></a></li>
-            <li><a href="#"><i class="fas fa-users"></i><span>Community</span></a></li>
-        </ul>
+      <button class="drawer-close"><i class="fas fa-arrow-left"></i></button>
+      <ul>
+        <li>
+          <a href="#"><i class="fas fa-mountain"></i><span>Activity</span></a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-briefcase"></i><span>Works</span></a>
+        </li>
+        <li>
+          <a href="#" class="active"
+            ><i class="fas fa-bed"></i><span>Stay</span></a
+          >
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-utensils"></i><span>Eat</span></a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-users"></i><span>Community</span></a>
+        </li>
+      </ul>
     </div>
     <main>
-        <h1 class="back-button" onclick="redirectToHome()"> < HOME</h1>
       <section class="property-details">
+        <h1 class="back-button" onclick="redirectToHome()">< HOME</h1>
         <h1>FREE ART FIELD出雲崎</h1>
         <p class="address">新潟県三島郡出雲崎町久田160</p>
         <div class="price-booking">
@@ -159,7 +170,7 @@
         </div>
       </section>
 
-      <div class="tags-container">
+      <div class="tags-container2">
         <div class="tags-label">
           <span>TAGS</span>
         </div>
@@ -174,16 +185,15 @@
 
       <section class="image-gallery">
         <div class="main-image">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093745!2d144.95543151520293!3d-37.81627957975157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577fe3567c749f1!2sFederation%20Square!5e0!3m2!1sen!2sus!4v1694958121078!5m2!1sen!2sus"
-             
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-          
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093745!2d144.95543151520293!3d-37.81627957975157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577fe3567c749f1!2sFederation%20Square!5e0!3m2!1sen!2sus!4v1694958121078!5m2!1sen!2sus"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
         <div class="thumbnail-grid">
           <div class="stay-item">
             <img src="./assets/PXL_20230527_104141914.jpg" alt="Stay 1" />
@@ -222,37 +232,35 @@
       </section>
     </main>
     <footer class="footer">
-        <img src="nomad-lab-logo.png" alt="Nomad Lab" class="logo">
-        <div class="footer-text">
-            COMMUNITY<br>
-            PROJECT<br>
-            EVENT
-        </div>
-        <div class="footer-text">
-            地図から探す
-        </div>
-        <img src="globe-icon.svg" alt="Globe Icon" class="globe-icon">
-        <div class="footer-text">
-            SUUU
-        </div>
-        <div class="copyright">
-            Copyright © Qetic inc. All Rights Reserved.
-        </div>
+      <img src="nomad-lab-logo.png" alt="Nomad Lab" class="logo" />
+      <div class="footer-text">
+        COMMUNITY<br />
+        PROJECT<br />
+        EVENT
+      </div>
+      <div class="footer-text">地図から探す</div>
+      <img src="globe-icon.svg" alt="Globe Icon" class="globe-icon" />
+      <div class="footer-text">SUUU</div>
+      <div class="copyright">Copyright © Qetic inc. All Rights Reserved.</div>
     </footer>
     <script>
-      const hamburgerMenu = document.querySelector('.hamburger-menu');
-          const drawer = document.querySelector('.drawer');
-          const drawerOverlay = document.querySelector('.drawer-overlay');
-          const drawerClose = document.querySelector('.drawer-close');
-  
-          function toggleDrawer() {
-              drawer.classList.toggle('open');
-              drawerOverlay.style.display = drawer.classList.contains('open') ? 'block' : 'none';
-          }
-  
-          hamburgerMenu.addEventListener('click', toggleDrawer);
-          drawerOverlay.addEventListener('click', toggleDrawer);
-          drawerClose.addEventListener('click', toggleDrawer);
+      const hamburgerMenu = document.querySelector(".hamburger-menu");
+      const drawer = document.querySelector(".drawer");
+      const drawerOverlay = document.querySelector(".drawer-overlay");
+      const drawerClose = document.querySelector(".drawer-close");
+
+      function toggleDrawer() {
+        drawer.classList.toggle("open");
+        if (drawer.classList.contains("open")) {
+          drawerOverlay.style.display = "block";
+        } else {
+          drawerOverlay.style.display = "none";
+        }
+      }
+
+      hamburgerMenu.addEventListener("click", toggleDrawer);
+      drawerOverlay.addEventListener("click", toggleDrawer);
+      drawerClose.addEventListener("click", toggleDrawer);
     </script>
   </body>
 </html>
