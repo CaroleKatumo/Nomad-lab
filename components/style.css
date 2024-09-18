@@ -702,6 +702,7 @@ main {
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 .image-gallery {
@@ -924,7 +925,7 @@ input, select {
 
 .back-button {
   font-size: 20px;
-  margin-bottom: 60px !important;
+  margin-bottom: 30px !important;
   cursor: pointer;
 }
 
@@ -989,6 +990,114 @@ input, select {
   float: right;
   margin-top: 20px;
   font-weight: bold;
+}
+
+.div4 {
+  float: left;
+  width: 48%;
+  margin-top: 10px;
+}
+.div4 input{
+ height: 40px;
+}
+
+.div5 {
+  float: right;
+  width: 48%;
+  margin-top: 10px;
+}
+
+.date-container {
+  font-family: Arial, sans-serif;
+  width: 300px;
+  margin-top: 10px;
+}
+
+.date-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.date-box, .guest-box {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 48%;
+  position: relative;
+}
+
+.guest-box {
+  width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .date-container {
+    width: 90%;
+  }
+
+  .date-row {
+    flex-direction: column;
+  }
+
+  .date-box, .guest-box {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .label {
+    font-size: 14px;
+  }
+
+  .date, .guest {
+    font-size: 16px;
+  }
+
+  .dropdown-icon {
+    font-size: 14px;
+  }
+}
+
+.label {
+  font-size: 12px;
+  color: #666;
+}
+
+.date, .guest {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.dropdown-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  font-size: 12px;
+}
+
+/* Adjust iframe size for different screen sizes */
+@media (max-width: 768px) {
+  .div4 {
+    float: center;
+    width: 100%;
+  }
+  .div5 {
+    float: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .div4 {
+    float: center;
+    width: 100%;
+  }
+  .div5 {
+    float: center;
+    width: 100%;
+  }
 }
 
 
