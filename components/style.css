@@ -434,6 +434,11 @@ nav ul li a.active {
   margin-left: -20px;
 }
 
+@media (max-width: 768px) {
+  .stay-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 /* Left label (TAGS) styling */
 .tags-label {
   background-color: white; /* Orange matches background */
@@ -662,6 +667,7 @@ nav ul li a.active {
 
   .tags-container2 {
     padding: 5px 10px;
+    width: 768px;
   }
 
   .tags-label {
@@ -1371,6 +1377,18 @@ select {
   }
 
   
+}
+
+@media (max-width: 320px) {
+  .tags-container2 {
+    width: 370px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .tags-container2 {
+    width: 1024px;
+  }
 }
 
 
