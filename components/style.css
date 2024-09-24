@@ -915,9 +915,9 @@ nav ul li a.active {
 }
 
 main {
-  /* max-width: 1400px; */
+  /* max-width: 2500px !important; */
   margin: 0 auto;
-  padding: 20px;
+  /* padding: 20px; */
   /* background-color: white; */
   /* border-radius: 10px; */
   /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
@@ -1660,3 +1660,4 @@ p {
   border: none;
   cursor: pointer;
 }
+
