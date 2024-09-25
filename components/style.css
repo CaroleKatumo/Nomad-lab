@@ -522,16 +522,28 @@ nav ul li a.active {
   text-align: right;
   flex: 1 1 auto;
 }
-
 .head {
   font-size: 18px;
   font-weight: 700 !important;
   margin-top: 10px !important;
-  /* text-decoration: none; */
   color: #000 !important;
   transition: color 0.3s ease;
   text-align: left;
   font-family: sans-serif;
+  display: flex;
+  align-items: center; /* Aligns items vertically */
+}
+
+.vertical-line {
+  display: inline-block;
+  width: 4px;
+  height: 20px;
+  background-color: #0c0b0b;
+  margin-right: 8px; /* Adjust margin for spacing between the line and text */
+}
+
+.head-text {
+  margin-top: 0; /* Ensure no extra top margin */
 }
 
 .stay-item:hover .head {
@@ -895,8 +907,10 @@ nav ul li a.active {
 
   .search-profile {
     /* display: column; */
-    margin-left: 20px;
+    margin-left: 80px;
+    text-align: right;
     align-items: right;
+    justify-content: right;
   }
 
   /* .stay-description h1 {
@@ -1493,14 +1507,7 @@ select {
   }
 }
 
-.vertical-line {
-  display: inline-block;
-  width: 4px;
-  height: 20px;
-  margin-top: 0px;
-  background-color: #0c0b0b;
-  margin-right: 1px;
-}
+
 
 .horizontal-line {
   width: 35px;
